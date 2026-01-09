@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* src/App.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121214; /* Fundo dark */
+  color: white;
+  font-family: sans-serif;
+}
+
+.cartao {
+  background-color: #202024; /* Cinza do cartão */
   padding: 2rem;
+  border-radius: 12px;
   text-align: center;
+  border: 1px solid #323238;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.titulo {
+  color: #00B37E; /* Verde neon */
+  margin-bottom: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitulo {
+  color: #a8a8b3;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #8257E5; /* Roxo */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+  width: 100%; /* Botão ocupa toda largura do cartão */
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  background-color: #996DFF;
+  transform: scale(1.02);
 }
 
-.read-the-docs {
-  color: #888;
+/* Quando o botão tiver a classe "botao-ativo" */
+button.botao-ativo {
+  background-color: #00B37E; /* Verde */
+  color: white;
+  border: 1px solid #00B37E;
 }
