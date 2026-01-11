@@ -15,6 +15,13 @@ function Cartao(props) {
 
   return (
     <div className="cartao">
+      {/* Aqui entra a imagem recebida via props*/}
+      <img
+        src={props.avatar}
+        alt="Foto do perfil"
+        className="foto-perfil"
+      />
+      
       <h1 className="titulo">{props.nome}</h1>
       <p className="subtitulo">{props.cargo}</p>
       
